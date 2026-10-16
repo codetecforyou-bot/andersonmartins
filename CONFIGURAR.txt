@@ -1,0 +1,24 @@
+ANDERSON MARTINS ADVOGADOS - O QUE FALTA CONFIGURAR ANTES DE PUBLICAR
+
+1. DOMÍNIO
+   Troque "https://SEU-DOMINIO.com.br" pelo endereço real do site em: index.html, robots.txt, sitemap.xml e llms.txt
+   (use "Localizar e substituir" no editor; aparece em todos os quatro arquivos).
+
+2. GOOGLE ANALYTICS 4
+   Crie a propriedade em analytics.google.com, copie o ID (G-XXXXXXX)
+   e cole em index.html na linha: const GA_ID='';
+
+3. MICROSOFT CLARITY (mapa de calor e gravação de sessões)
+   Crie o projeto em clarity.microsoft.com, copie o ID do projeto
+   e cole em index.html na linha: const CLARITY_ID='';
+
+4. GOOGLE SEARCH CONSOLE
+   Em search.google.com/search-console, adicione a propriedade "Prefixo do URL" com o domínio.
+   Verifique pelo Google Analytics (já instalado) ou cole a meta tag de verificação no lugar
+   indicado no <head> do index.html. Depois envie o sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
+
+5. BING WEBMASTER TOOLS (opcional)
+   Em bing.com/webmasters dá para importar direto do Search Console.
+
+Todos os arquivos desta pasta precisam ficar na raiz do domínio
+(favicon.ico, robots.txt, sitemap.xml e llms.txt no mesmo nível do index.html).
